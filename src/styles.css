@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.social-media-links {
+  @apply bg-red-400 text-white w-10 h-10 leading-10  rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:text-red-400;
+}
