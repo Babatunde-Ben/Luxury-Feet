@@ -15,5 +15,17 @@
   @apply w-60 h-full rounded-lg object-cover;
 }
 .swiper-slide-2 {
-  @apply w-60 h-64 rounded-lg;
+  @apply w-60 h-64 rounded-lg select-none;
+}
+.swiper-pagination {
+  @apply bottom-0 !important;
+}
+.swiper-pagination span {
+  @apply bg-secondary-100 w-2 h-2;
+}
+.top-navbar li {
+  @apply lg:inline-flex lg:mr-5 py-2 hover:bg-gray-600;
+}
+.nav-links {
+  @apply px-3 py-2 rounded text-gray-200 lg:hover:text-white lg:hover:bg-gray-400 transition;
 }

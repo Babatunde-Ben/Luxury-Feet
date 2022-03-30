@@ -26,14 +26,26 @@
       ></div>
       <!-- beginning of hero section -->
       <section class="w-full h-full absolute">
-        <nav class="p-3 bg-green-900">
+        <nav class="flex items-center flex-wrap">
           <!-- <i class="fas fa-phone text-white"></i> -->
-
-          <ul class="text-white flex">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Home</a></li>
+          <a href="#" class="py-3 px-5 mr-4"
+            ><img src="./images/default-logo.png" alt=""
+          /></a>
+          <button
+            class="text-primary inline-flex p-3 hover:bg-secondary-200 rounded lg:hidden ml-auto"
+            id="menu-icon"
+          >
+            <i class="fas fa-home"></i>
+          </button>
+          <ul
+            class="text-white w-full lg:inline-flex lg:justify-end lg:flex-grow lg:flex-row lg:w-auto lg:pr-5 flex flex-col top-navbar bg-gray-700"
+          >
+            <li class=" ">
+              <a href="#" class="nav-links">Home</a>
+            </li>
+            <li><a href="#" class="nav-links">Products</a></li>
+            <li><a href="#" class="nav-links">Contact Us</a></li>
+            <li><a href="#" class="nav-links">FAQ</a></li>
           </ul>
         </nav>
         <div
@@ -98,7 +110,7 @@
     </section> -->
 
     <!-- Slider main container -->
-    <div class="swiper h-80">
+    <div class="swiper h-80 mt-6 md:w-3/4">
       <div class="swiper-wrapper items-center">
         <!-- Slides -->
 
@@ -130,11 +142,6 @@
         </div>
       </div>
       <div class="swiper-pagination"></div>
-
-      <!-- <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <div class="swiper-scrollbar"></div> -->
     </div>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
