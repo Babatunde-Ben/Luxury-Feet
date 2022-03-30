@@ -24,7 +24,7 @@
   @apply bg-secondary-100 w-2 h-2;
 }
 .top-navbar li {
-  @apply lg:inline-flex lg:mr-5 py-2 hover:bg-gray-600;
+  @apply lg:inline-flex lg:mr-5 py-2 hover:bg-gray-600 transition duration-1000;
 }
 .nav-links {
   @apply px-3 py-2 rounded text-gray-200 lg:hover:text-white lg:hover:bg-gray-400 transition;

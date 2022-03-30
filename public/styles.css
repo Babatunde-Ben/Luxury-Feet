@@ -512,6 +512,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.top-0{
+  top: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.top-5{
+  top: 1.25rem;
+}
+
+.top-9{
+  top: 2.25rem;
+}
+
+.top-12{
+  top: 3rem;
+}
+
+.top-14{
+  top: 3.5rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -713,6 +737,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.3;
 }
 
+.transition{
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-1000{
+  transition-duration: 1000ms;
+}
+
 .social-media-links{
   margin-right: 1rem;
   height: 2.5rem;
@@ -777,6 +813,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-navbar li{
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
 }
 
 .top-navbar li:hover{

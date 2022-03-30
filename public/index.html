@@ -26,7 +26,7 @@
       ></div>
       <!-- beginning of hero section -->
       <section class="w-full h-full absolute">
-        <nav class="flex items-center flex-wrap">
+        <nav class="flex items-center flex-wrap relative">
           <!-- <i class="fas fa-phone text-white"></i> -->
           <a href="#" class="py-3 px-5 mr-4"
             ><img src="./images/default-logo.png" alt=""
@@ -38,7 +38,7 @@
             <i class="fas fa-home"></i>
           </button>
           <ul
-            class="text-white w-full lg:inline-flex lg:justify-end lg:flex-grow lg:flex-row lg:w-auto lg:pr-5 flex flex-col top-navbar bg-gray-700"
+            class="absolute top-14 left-0 text-white w-full lg:inline-flex lg:justify-end lg:flex-grow lg:flex-row lg:w-auto lg:pr-5 flex flex-col top-navbar bg-gray-700"
           >
             <li class=" ">
               <a href="#" class="nav-links">Home</a>
@@ -152,7 +152,6 @@
         spaceBetween: 30,
         centeredSlides: true,
         grabCursor: true,
-        // slideActiveClass: "swiper-slide-active",
         loop: true,
 
         pagination: {
@@ -161,18 +160,8 @@
           dynamicBullets: true,
           dynamicMainBullets: 3,
         },
-
-        // Navigation arrows
-        // navigation: {
-        //   nextEl: '.swiper-button-next',
-        //   prevEl: '.swiper-button-prev',
-        // },
-
-        // And if we need scrollbar
-        // scrollbar: {
-        //   el: '.swiper-scrollbar',
-        // },
       });
     </script>
+    <script src="./script.js"></script>
   </body>
 </html>
