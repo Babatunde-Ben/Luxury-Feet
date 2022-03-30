@@ -98,13 +98,36 @@
     </section> -->
 
     <!-- Slider main container -->
-    <div class="swiper">
-      <div class="swiper-wrapper">
+    <div class="swiper h-80">
+      <div class="swiper-wrapper items-center">
         <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        ...
+
+        <div class="swiper-slide swiper-slide-2">
+          <img src="./images/boot-250012_640.jpg" alt="" class="slider-img" />
+        </div>
+        <div class="swiper-slide swiper-slide-2">
+          <img src="./images/boots-181744_640.jpg" alt="" class="slider-img" />
+        </div>
+        <div class="swiper-slide swiper-slide-2">
+          <img
+            src="./images/dumbbells-2465478_640.jpg"
+            alt=""
+            class="slider-img"
+          />
+        </div>
+        <div class="swiper-slide swiper-slide-2">
+          <img src="./images/boot-250012_640.jpg" alt="" class="slider-img" />
+        </div>
+        <div class="swiper-slide swiper-slide-2">
+          <img src="./images/boots-181744_640.jpg" alt="" class="slider-img" />
+        </div>
+        <div class="swiper-slide swiper-slide-2">
+          <img
+            src="./images/dumbbells-2465478_640.jpg"
+            alt=""
+            class="slider-img"
+          />
+        </div>
       </div>
       <div class="swiper-pagination"></div>
 
@@ -117,11 +140,19 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
+        effect: "slide",
+        slidesPerView: "auto",
+        spaceBetween: 30,
+        centeredSlides: true,
+        grabCursor: true,
+        // slideActiveClass: "swiper-slide-active",
         loop: true,
 
         pagination: {
           el: ".swiper-pagination",
-          clickable: "true",
+          clickable: true,
+          dynamicBullets: true,
+          dynamicMainBullets: 3,
         },
 
         // Navigation arrows
