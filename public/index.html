@@ -32,15 +32,41 @@
             ><img src="./images/default-logo.png" alt=""
           /></a>
           <button
-            class="text-primary inline-flex p-3 hover:bg-secondary-200 rounded lg:hidden ml-auto"
+            class="text-primary inline-flex p-3 rounded lg:hidden ml-auto"
             id="menu-icon"
           >
-            <i class="fas fa-home"></i>
+            <!-- <i class="fas fa-menu"></i> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 open-menu"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 close-menu hidden"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
           </button>
           <ul
-            class="absolute top-14 left-0 text-white w-full lg:inline-flex lg:justify-end lg:flex-grow lg:flex-row lg:w-auto lg:pr-5 flex flex-col top-navbar bg-gray-700"
+            class="absolute lg:static top-14 left-0 text-white w-full lg:inline-flex lg:justify-end lg:flex-grow lg:flex-row lg:w-auto lg:pr-5 flex flex-col top-navbar bg-gray-700 lg:bg-inherit py-2 hidden"
           >
-            <li class=" ">
+            <li>
               <a href="#" class="nav-links">Home</a>
             </li>
             <li><a href="#" class="nav-links">Products</a></li>
@@ -109,8 +135,15 @@
       </div>
     </section> -->
 
-    <!-- Slider main container -->
-    <div class="swiper h-80 mt-6 md:w-3/4">
+    <h2
+      class="text-center text-secondary-100 font-bold capitalize text-2xl mt-8"
+    >
+      top sales
+    </h2>
+
+    <!-- Slider section -->
+
+    <div class="swiper h-80 my-5 md:w-3/4">
       <div class="swiper-wrapper items-center">
         <!-- Slides -->
 
@@ -143,6 +176,107 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
+
+    <!-- testimonials -->
+    <h2
+      class="text-center text-secondary-100 font-bold capitalize text-2xl mb-5 mt-8"
+    >
+      testimonials
+    </h2>
+    <section
+      class="px-5 flex flex-col flex-wrap md:flex-row md:justify-center md:items-center text-secondary-200"
+    >
+      <div class="testimonials">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 fill-secondary-100 mx-auto mb-4"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+          />
+        </svg>
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius
+          nam quibusdam eos magnam mollitia fugit distinctio veniam, similique
+          maiores.
+        </p>
+
+        <div class="w-20 h-20 rounded-full overflow-hidden mt-5 mx-auto">
+          <img
+            src="./images/svgs/reshot-icon-secretary-Z3TSDEL9JC.svg "
+            class="w-full h-full"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3 class="testimonial-names">Becca Doe</h3>
+          <p class="text-center capitalize text-gray-500 italic md:text-sm">
+            customer
+          </p>
+        </div>
+      </div>
+      <div class="testimonials">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 fill-secondary-100 mx-auto mb-4"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+          />
+        </svg>
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius
+          nam quibusdam eos magnam mollitia fugit distinctio veniam, similique
+          maiores.
+        </p>
+
+        <div class="w-20 h-20 rounded-full overflow-hidden mt-5 mx-auto">
+          <img
+            src="./images/svgs/reshot-icon-hat-boy-RM4BYZXNHC.svg "
+            class="w-full h-full"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3 class="testimonial-names">James Doe</h3>
+          <p class="text-center capitalize text-gray-500 italic md:text-sm">
+            customer
+          </p>
+        </div>
+      </div>
+      <div class="testimonials">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-10 w-10 fill-secondary-100 mx-auto mb-4"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"
+          />
+        </svg>
+        <p class="testimonial-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eius
+          nam quibusdam eos magnam mollitia fugit distinctio veniam, similique
+          maiores.
+        </p>
+
+        <div class="w-20 h-20 rounded-full overflow-hidden mt-5 mx-auto">
+          <img
+            src="./images/svgs/reshot-icon-curly-black-YQM2K3B8WX.svg "
+            class="w-full h-full"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3 class="testimonial-names">Sarah Doe</h3>
+          <p class="text-center capitalize text-gray-500 italic md:text-sm">
+            customer
+          </p>
+        </div>
+      </div>
+    </section>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>

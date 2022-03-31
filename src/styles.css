@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .social-media-links {
-  @apply bg-red-400 text-white w-10 h-10 leading-10  rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:text-red-400;
+  @apply bg-red-400 text-white w-10 h-10 leading-10  rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:scale-110 hover:text-red-400 transition;
 }
 .swiper-slide-active {
   @apply scale-110 transition duration-300;
@@ -24,8 +24,17 @@
   @apply bg-secondary-100 w-2 h-2;
 }
 .top-navbar li {
-  @apply lg:inline-flex lg:mr-5 py-2 hover:bg-gray-600 transition duration-1000;
+  @apply lg:inline-flex lg:mr-5 hover:bg-gray-600;
 }
 .nav-links {
-  @apply px-3 py-2 rounded text-gray-200 lg:hover:text-white lg:hover:bg-gray-400 transition;
+  @apply px-3 py-2 rounded text-gray-200 hover:text-white transition w-full lg:w-auto inline-block;
+}
+.testimonials {
+  @apply p-4 border-2 border-gray-100 rounded-xl basis-full md:basis-80 shadow-lg  md:mr-7 mb-7;
+}
+.testimonial-text {
+  @apply md:text-sm text-center text-base text-secondary-200 leading-7 md:leading-6;
+}
+.testimonial-names {
+  @apply font-bold text-center text-lg md:text-base mt-3 text-secondary-100;
 }
