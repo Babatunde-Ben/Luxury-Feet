@@ -18,9 +18,9 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="font-Poppins">
+  <body class="h-screen">
     <!-- Beginning of header -->
-    <header class="relative h-96 lg:h-1/2 bg-red-900">
+    <header class="relative h-96 lg:h-3/4 bg-red-900">
       <div
         class="w-full h-full bg-gradient-to-b from-black to-black absolute opacity-50"
       ></div>
@@ -32,16 +32,16 @@
             ><img src="./images/default-logo.png" alt=""
           /></a>
           <button
-            class="text-primary inline-flex p-3 rounded lg:hidden ml-auto"
+            class="text-primary inline-flex p-3 rounded lg:hidden ml-auto mr-4"
             id="menu-icon"
           >
             <!-- <i class="fas fa-menu"></i> -->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5 open-menu"
-              fill="none"
+              fill=""
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="white"
               stroke-width="2"
             >
               <path
@@ -54,7 +54,7 @@
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5 close-menu hidden"
               viewBox="0 0 20 20"
-              fill="currentColor"
+              fill="white"
             >
               <path
                 fill-rule="evenodd"
@@ -78,7 +78,7 @@
           class="w-full h-3/4 text-center flex justify-center items-center flex-col"
         >
           <h1
-            class="text-2xl md:text-3xl lg:text-5xl lg:leading-relaxed mb-5 text-primary font-bold capitalize tracking-wide"
+            class="text-2xl md:text-3xl lg:text-5xl lg:leading-tight mb-5 text-primary font-bold capitalize tracking-wide"
           >
             Your No. 1 Shoe <br />
             Collection Store
@@ -143,7 +143,7 @@
 
     <!-- Slider section -->
 
-    <div class="swiper h-80 my-5 md:w-3/4">
+    <div class="swiper h-80 my-5 md:w-3/4 overflow-hidden">
       <div class="swiper-wrapper items-center">
         <!-- Slides -->
 
@@ -177,11 +177,45 @@
       <div class="swiper-pagination"></div>
     </div>
 
+    <!-- Exclusive offer -->
+    <section
+      class="bg-gray-800 h-auto w-full px-5 py-7 flex flex-col md:flex-wrap md:flex-row justify-between items-center my-10 lg:mb-20"
+    >
+      <div class="col-2 overflow-hidden">
+        <img
+          src="./images/nike-g4ecb7ab32_1920.jpg"
+          alt=""
+          class="w-full h-full object-cover rounded-xl"
+        />
+      </div>
+      <div class="col-2">
+        <h2
+          class="text-3xl sm:text-4xl text-secondary-100 font-bold my-5 text-center md:text-left"
+        >
+          Exclusive Offer
+        </h2>
+        <p
+          class="mb-8 sm:max-w-md md:w-full text-primary md:leading-loose text-center md:text-left"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius
+          veniam maiores itaque nisi eaque nobis totam, eius veniam maiores
+          vitae sequi cumque.
+        </p>
+        <div class="bg-green-400 ml-auto inline-flex">
+          <button
+            class="px-5 py-2 rounded-full capitalize text-secondary-100 bg-primary font-bold hover:bg-secondary-100 hover:text-primary inline-block ml-auto text-center transition"
+          >
+            Shop Now
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!-- testimonials -->
     <h2
       class="text-center text-secondary-100 font-bold capitalize text-2xl mb-5 mt-8"
     >
-      testimonials
+      Fashion Quotes
     </h2>
     <section
       class="px-5 flex flex-col flex-wrap md:flex-row md:justify-center md:items-center text-secondary-200"
@@ -212,7 +246,7 @@
         <div>
           <h3 class="testimonial-names">Becca Doe</h3>
           <p class="text-center capitalize text-gray-500 italic md:text-sm">
-            customer
+            Co-founder, Luxury Feet.
           </p>
         </div>
       </div>
@@ -242,7 +276,7 @@
         <div>
           <h3 class="testimonial-names">James Doe</h3>
           <p class="text-center capitalize text-gray-500 italic md:text-sm">
-            customer
+            Co-founder, Luxury Feet.
           </p>
         </div>
       </div>
@@ -272,7 +306,7 @@
         <div>
           <h3 class="testimonial-names">Sarah Doe</h3>
           <p class="text-center capitalize text-gray-500 italic md:text-sm">
-            customer
+            Co-founder, Luxury Feet.
           </p>
         </div>
       </div>

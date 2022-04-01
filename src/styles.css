@@ -1,11 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Poppins:wght@400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    /* font-family: "Poppins", sans-serif; */
+    font-family: "Nunito", sans-serif;
+  }
+}
+
+.nav-links {
+  @apply px-3 py-2 rounded text-gray-200 hover:text-white transition w-full lg:w-auto inline-block;
+}
 .social-media-links {
-  @apply bg-red-400 text-white w-10 h-10 leading-10  rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:scale-110 hover:text-red-400 transition;
+  @apply bg-red-400 text-white w-10 h-10 leading-10  rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:scale-110  hover:text-red-400  transition;
 }
 .swiper-slide-active {
   @apply scale-110 transition duration-300;
@@ -26,15 +39,16 @@
 .top-navbar li {
   @apply lg:inline-flex lg:mr-5 hover:bg-gray-600;
 }
-.nav-links {
-  @apply px-3 py-2 rounded text-gray-200 hover:text-white transition w-full lg:w-auto inline-block;
-}
+
 .testimonials {
-  @apply px-4 py-6 border-2 border-gray-100 rounded-xl basis-full md:basis-80 shadow-lg  md:mr-7 mb-7;
+  @apply px-4 py-6 border-2 border-gray-100 bg-white rounded-xl basis-full md:basis-80 shadow-lg  md:mr-7 mb-7 hover:shadow-xl hover:-translate-y-1 transition;
 }
 .testimonial-text {
   @apply md:text-sm text-center text-base text-secondary-200 leading-7 md:leading-6;
 }
 .testimonial-names {
   @apply font-bold text-center text-lg md:text-base mt-3 text-secondary-100;
+}
+.col-2 {
+  @apply basis-1/2 p-3;
 }
