@@ -39,6 +39,9 @@
 .top-navbar li {
   @apply lg:inline-flex lg:mr-5 hover:bg-gray-600;
 }
+.about-links {
+  @apply w-8 h-8 leading-8 cursor-pointer mr-4 text-center bg-white hover:-rotate-6 text-red-400 origin-top-left transition ease-in-out duration-400;
+}
 
 .testimonials {
   @apply px-4 py-6 border-2 border-gray-100 bg-white rounded-xl basis-full md:basis-80 shadow-lg  md:mr-7 mb-7 hover:shadow-xl hover:-translate-y-1 transition;
