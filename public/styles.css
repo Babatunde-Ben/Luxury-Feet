@@ -431,7 +431,7 @@ html {
 
 body {
   /* font-family: "Poppins", sans-serif; */
-  /* font-family: "Nunito", sans-serif; */
+  font-family: "Nunito", sans-serif;
 }
 
 input {
@@ -623,6 +623,10 @@ input {
   flex-basis: 50%;
 }
 
+.resize-none{
+  resize: none;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -706,11 +710,6 @@ input {
 .bg-whatsapp{
   --tw-bg-opacity: 1;
   background-color: rgb(67 191 83 / var(--tw-bg-opacity));
-}
-
-.bg-blue-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(191 219 254 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b{
@@ -1063,22 +1062,37 @@ input {
 }
 
 .input{
+  margin-bottom: 1rem;
+  width: 100%;
   border-style: none;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-.form-group{
+@media (min-width: 640px){
+  .input{
+    width: auto;
+  }
+}
+
+.form-label{
+  margin-bottom: 0.25rem;
   display: block;
   width: auto;
   font-weight: 700;
   text-transform: capitalize;
-  --tw-text-opacity: 1;
   color: rgb(66 66 66 / var(--tw-text-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
 .hover\:bg-secondary-100:hover{
@@ -1092,6 +1106,10 @@ input {
 }
 
 @media (min-width: 640px){
+  .sm\:flex{
+    display: flex;
+  }
+
   .sm\:max-w-md{
     max-width: 28rem;
   }
@@ -1103,10 +1121,6 @@ input {
 }
 
 @media (min-width: 768px){
-  .md\:flex{
-    display: flex;
-  }
-
   .md\:w-3\/4{
     width: 75%;
   }
