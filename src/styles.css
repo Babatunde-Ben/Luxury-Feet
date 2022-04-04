@@ -68,7 +68,7 @@
   @apply basis-1/2 p-3;
 }
 .input {
-  @apply outline-none border-none pr-3  py-2 mb-4 w-full sm:w-auto bg-gray-700 text-white tracking-wide text-sm;
+  @apply outline-none border-none pr-3 py-2 mb-4 w-full  bg-gray-700 text-white tracking-wide text-sm;
 }
 .input-icon {
   @apply absolute bottom-7 left-2 text-gray-600 text-sm;

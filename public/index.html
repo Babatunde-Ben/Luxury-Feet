@@ -210,8 +210,11 @@
         </div>
       </div>
     </section> -->
+
+    <!-- about section -->
+
     <section
-      class="bg-gray-800 h-auto w-full px-5 py-7 flex flex-col md:flex-wrap md:flex-row justify-between items-center my-12 lg:mb-20"
+      class="bg-gray-800 h-auto w-full px-5 py-7 md:py-10 flex flex-col md:flex-wrap md:flex-row justify-between items-center my-12 lg:mb-20"
     >
       <div class="col-2 overflow-hidden">
         <img
@@ -252,8 +255,6 @@
       </div>
     </section>
 
-    <!-- About Luxury Feet -->
-
     <!-- testimonials -->
     <h2
       class="text-center text-secondary-100 font-bold capitalize text-3xl m-5 mt-12"
@@ -289,7 +290,7 @@
         <div>
           <h3 class="testimonial-names">Becca Doe</h3>
           <p class="text-center capitalize text-gray-500 italic md:text-sm">
-            Co-founder, Luxury Feet.
+            Co-founder, NKLF.
           </p>
         </div>
       </div>
@@ -319,7 +320,7 @@
         <div>
           <h3 class="testimonial-names">James Doe</h3>
           <p class="text-center capitalize text-gray-500 italic md:text-sm">
-            Co-founder, Luxury Feet.
+            Co-founder, NKLF.
           </p>
         </div>
       </div>
@@ -349,7 +350,7 @@
         <div>
           <h3 class="testimonial-names">Sarah Doe</h3>
           <p class="text-center capitalize text-gray-500 italic md:text-sm">
-            Co-founder, Luxury Feet.
+            Co-founder, NKLF.
           </p>
         </div>
       </div>
@@ -362,68 +363,78 @@
       >
         Get in touch
       </h2>
-      <form action="" class="w-full">
-        <div class="sm:flex justify-between items-center">
-          <div class="relative">
-            <label class="form-label" for="first-name">first name </label>
+      <div class="md:flex justify-between items-center w-full">
+        <div class="md:w-full">
+          <img
+            src="./images/svgs/contact-luxury-feet.svg"
+            alt=""
+            class="md:w-full"
+          />
+        </div>
 
-            <i class="fa fa-user input-icon"></i>
+        <form action="" class="w-full md:basis-1/2">
+          <div class="md:flex justify-between items-center w-72">
+            <div class="relative">
+              <label class="form-label" for="first-name">first name </label>
 
+              <i class="fa fa-user input-icon"></i>
+
+              <input
+                type="text"
+                placeholder="Becca"
+                id="first-name"
+                class="input pl-7"
+              />
+            </div>
+            <div class="relative">
+              <label class="form-label" for="last-name">last name </label>
+
+              <i class="fa fa-user input-icon"></i>
+              <input
+                type="text"
+                placeholder="Doe"
+                id="last-name"
+                class="input pl-7"
+              />
+            </div>
+          </div>
+          <div class="relative w-72">
+            <label class="form-label" for="email"> email address</label>
+            <i class="fa fa-envelope input-icon"></i>
             <input
               type="text"
-              placeholder="Becca"
-              id="first-name"
+              placeholder="youremail@example.com"
+              id="email"
               class="input pl-7"
             />
           </div>
-          <div class="relative">
-            <label class="form-label" for="last-name">last name </label>
-
-            <i class="fa fa-user input-icon"></i>
+          <div class="relative w-72">
+            <label class="form-label" for="tel">phone number </label>
+            <i class="fa fa-phone input-icon"></i>
             <input
-              type="text"
-              placeholder="Doe"
-              id="last-name"
+              type="tel"
+              placeholder="Phone no."
+              id="tel"
               class="input pl-7"
             />
           </div>
-        </div>
-        <div class="relative">
-          <label class="form-label" for="email"> email address</label>
-          <i class="fa fa-envelope input-icon"></i>
-          <input
-            type="text"
-            placeholder="youremail@example.com"
-            id="email"
-            class="input pl-7"
-          />
-        </div>
-        <div class="relative">
-          <label class="form-label" for="tel">phone number </label>
-          <i class="fa fa-phone input-icon"></i>
-          <input
-            type="tel"
-            placeholder="Phone no."
-            id="tel"
-            class="input pl-7"
-          />
-        </div>
-        <div>
-          <label class="form-label" for="message">message </label>
-          <textarea
-            name=""
-            id="meassage"
-            cols="30"
-            rows="10"
-            placeholder="Type your message here"
-            class="input resize-none pl-3"
-          ></textarea>
-        </div>
-      </form>
+          <div class="w-72">
+            <label class="form-label" for="message">message </label>
+            <textarea
+              name=""
+              id="meassage"
+              cols="30"
+              rows="10"
+              placeholder="Type your message here"
+              class="input resize-none pl-3"
+            ></textarea>
+          </div>
+        </form>
+      </div>
     </section>
 
     <!-- Newsletter -->
-    <section class="py-8 lg:py-10 flex justify-center items-center">
+    <section class="py-10 lg:py-12 flex justify-center items-center">
       <div class="w-4/5 md:w-2/3 lg:w-2/4 shadow-lg px-5 py-6 sm:py-8 lg:py-10">
         <h2 class="text-xl font-bold text-gray-700 capitalize text-center mb-8">
           Subscribe to our newsletter
