@@ -71,7 +71,7 @@
   @apply outline-none border-none pr-3  py-2 mb-4 w-full sm:w-auto bg-gray-700 text-white tracking-wide text-sm;
 }
 .input-icon {
-  @apply absolute bottom-7 left-2 text-gray-400 text-sm;
+  @apply absolute bottom-7 left-2 text-gray-600 text-sm;
 }
 .form-label {
   @apply block w-auto font-bold text-secondary-200 capitalize mb-1 text-gray-300;
