@@ -364,32 +364,49 @@
       </h2>
       <form action="" class="w-full">
         <div class="sm:flex justify-between items-center">
-          <div class="">
+          <div class="relative">
             <label class="form-label" for="first-name">first name </label>
+
+            <i class="fa fa-user input-icon"></i>
+
             <input
               type="text"
               placeholder="Becca"
               id="first-name"
-              class="input"
+              class="input pl-7"
             />
           </div>
-          <div class="">
+          <div class="relative">
             <label class="form-label" for="last-name">last name </label>
-            <input type="text" placeholder="Doe" id="last-name" class="input" />
+
+            <i class="fa fa-user input-icon"></i>
+            <input
+              type="text"
+              placeholder="Doe"
+              id="last-name"
+              class="input pl-7"
+            />
           </div>
         </div>
-        <div>
+        <div class="relative">
           <label class="form-label" for="email"> email address</label>
+          <i class="fa fa-envelope input-icon"></i>
           <input
             type="text"
             placeholder="youremail@example.com"
             id="email"
-            class="input"
+            class="input pl-7"
           />
         </div>
-        <div>
+        <div class="relative">
           <label class="form-label" for="tel">phone number </label>
-          <input type="tel" placeholder="Phone no." id="tel" class="input" />
+          <i class="fa fa-phone input-icon"></i>
+          <input
+            type="tel"
+            placeholder="Phone no."
+            id="tel"
+            class="input pl-7"
+          />
         </div>
         <div>
           <label class="form-label" for="message">message </label>
@@ -399,7 +416,7 @@
             cols="30"
             rows="10"
             placeholder="Type your message here"
-            class="input resize-none"
+            class="input resize-none pl-3"
           ></textarea>
         </div>
       </form>

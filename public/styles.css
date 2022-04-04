@@ -781,6 +781,14 @@ input {
   padding-bottom: 0.5rem;
 }
 
+.pl-7{
+  padding-left: 1.75rem;
+}
+
+.pl-3{
+  padding-left: 0.75rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -1078,10 +1086,11 @@ input {
   border-style: none;
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   letter-spacing: 0.025em;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1093,6 +1102,16 @@ input {
   .input{
     width: auto;
   }
+}
+
+.input-icon{
+  position: absolute;
+  bottom: 1.75rem;
+  left: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .form-label{
