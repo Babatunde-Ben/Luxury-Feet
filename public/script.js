@@ -11,7 +11,6 @@ menuIconBtn.addEventListener("click", () => {
     navBar.classList.add("h-0");
     navBar.classList.remove("h-auto");
   }
-  // navBar.classList.toggle("overflow-auto");
 
   openMenu.classList.toggle("hidden");
   closeMenu.classList.toggle("hidden");
