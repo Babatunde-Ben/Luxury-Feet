@@ -27,7 +27,9 @@
 
       <!-- beginning of hero section -->
       <section class="w-full h-full absolute">
-        <nav class="flex items-center flex-wrap relative transition">
+        <nav
+          class="flex items-center flex-wrap relative w-full h-16 overflow-x-clip z-20"
+        >
           <a href="#" class="py-3 px-5 mr-4"
             ><img src="./images/default-logo.png" alt=""
           /></a>
@@ -62,11 +64,12 @@
               />
             </svg>
           </button>
+
           <ul
-            class="absolute lg:static top-16 left-full text-white w-full lg:inline-flex lg:justify-end lg:flex-grow lg:flex-row lg:w-auto lg:pr-5 flex flex-col top-navbar bg-gray-800 lg:bg-inherit lg:h-auto overflow-hidden transition duration-1000 close"
+            class="absolute lg:static top-16 left-full text-white w-full lg:inline-flex lg:justify-end lg:flex-grow lg:flex-row lg:w-auto lg:pr-5 flex flex-col top-navbar bg-gray-800 lg:bg-inherit lg:h-auto rounded-b-lg close"
           >
             <li>
-              <a href="#" class="nav-links">Home</a>
+              <a href="./index.html" class="nav-links">Home</a>
             </li>
             <li><a href="#" class="nav-links">Products</a></li>
             <li><a href="#" class="nav-links">Contact Us</a></li>

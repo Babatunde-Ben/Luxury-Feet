@@ -514,6 +514,10 @@ input {
   left: 100%;
 }
 
+.z-20{
+  z-index: 20;
+}
+
 .m-5{
   margin: 1.25rem;
 }
@@ -606,6 +610,10 @@ input {
   height: 100%;
 }
 
+.h-16{
+  height: 4rem;
+}
+
 .h-5{
   height: 1.25rem;
 }
@@ -654,8 +662,26 @@ input {
   width: 80%;
 }
 
+.w-16{
+  width: 4rem;
+}
+
 .basis-1\/3{
   flex-basis: 33.333333%;
+}
+
+.translate-x-5{
+  --tw-translate-x: 1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-5{
+  --tw-translate-y: 1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @-webkit-keyframes navOut{
@@ -760,6 +786,14 @@ input {
   overflow: hidden;
 }
 
+.overflow-x-hidden{
+  overflow-x: hidden;
+}
+
+.overflow-x-clip{
+  overflow-x: clip;
+}
+
 .rounded{
   border-radius: 0.25rem;
 }
@@ -770,6 +804,11 @@ input {
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-b-lg{
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }
 
 .border-2{
@@ -821,6 +860,16 @@ input {
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
+.bg-green-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
+.bg-pink-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -849,6 +898,10 @@ input {
 
 .p-3{
   padding: 0.75rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .py-3{
@@ -1000,10 +1053,6 @@ input {
   transition-duration: 150ms;
 }
 
-.duration-1000{
-  transition-duration: 1000ms;
-}
-
 .nav-bar-scroll{
   --tw-bg-opacity: 1;
   background-color: rgb(252 165 165 / var(--tw-bg-opacity));
@@ -1049,6 +1098,10 @@ input {
 
   .top-navbar li{
     display: inline-flex;
+  }
+
+  .top-navbar li:hover{
+    background-color: transparent;
   }
 }
 
