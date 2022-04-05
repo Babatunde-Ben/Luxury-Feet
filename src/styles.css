@@ -24,6 +24,9 @@
   .input:-webkit-autofill {
     -webkit-text-fill-color: #ffffff !important;
   }
+  .lf-shadow {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .nav-links {
@@ -56,7 +59,7 @@
 }
 
 .testimonials {
-  @apply px-4 py-6 border-2 border-gray-100 bg-white rounded-xl basis-full md:basis-80 shadow-lg  md:mr-7 mb-7 hover:shadow-xl hover:-translate-y-1 transition border-none outline-none;
+  @apply px-4 py-6 border-2 border-gray-100 bg-white rounded-xl basis-full md:basis-80  md:mr-7 mb-7 hover:shadow-xl hover:-translate-y-1 transition border-none outline-none;
 }
 .testimonial-text {
   @apply md:text-sm text-center text-base text-secondary-200 leading-7 md:leading-6;
