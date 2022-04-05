@@ -7,7 +7,7 @@
 @layer base {
   html {
     -webkit-tap-highlight-color: transparent;
-    scroll-behaviour: smooth;
+    scroll-behavior: smooth;
   }
   body {
     /* font-family: "Poppins", sans-serif; */
@@ -34,7 +34,7 @@
   @apply bg-red-300;
 }
 .nav-links {
-  @apply px-3 py-2 rounded text-gray-300 hover:text-white transition w-full lg:w-auto inline-block;
+  @apply px-3 py-2 rounded text-gray-300 hover:text-white transition w-full lg:w-auto inline-block capitalize;
 }
 .top-navbar li {
   @apply lg:inline-flex lg:mr-5 hover:bg-gray-700 lg:hover:bg-transparent;

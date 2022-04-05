@@ -427,7 +427,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 html {
   -webkit-tap-highlight-color: transparent;
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1031,6 +1031,7 @@ input {
   padding-right: 0.75rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  text-transform: capitalize;
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
