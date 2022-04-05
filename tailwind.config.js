@@ -16,6 +16,34 @@ module.exports = {
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
       },
+      animation: {
+        navIn: "navIn 0.6s ease-out",
+        navOut: "navOut 0.6s linear",
+      },
+      keyframes: {
+        navIn: {
+          "0%": {
+            left: "100%",
+          },
+          "70%": {
+            left: "0",
+          },
+          "90%": {
+            left: "10px",
+          },
+          "100%": {
+            left: "0",
+          },
+        },
+        navOut: {
+          from: {
+            left: "0",
+          },
+          to: {
+            left: "100%",
+          },
+        },
+      },
     },
   },
   plugins: [],
