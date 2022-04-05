@@ -579,6 +579,10 @@ input {
   margin-bottom: 1.5rem;
 }
 
+.mr-5{
+  margin-right: 1.25rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -659,6 +663,38 @@ input {
   width: 80%;
 }
 
+.w-80{
+  width: 20rem;
+}
+
+.w-96{
+  width: 24rem;
+}
+
+.w-60{
+  width: 15rem;
+}
+
+.w-40{
+  width: 10rem;
+}
+
+.w-48{
+  width: 12rem;
+}
+
+.w-52{
+  width: 13rem;
+}
+
+.w-11\/12{
+  width: 91.666667%;
+}
+
+.w-1\/2{
+  width: 50%;
+}
+
 .basis-1\/2{
   flex-basis: 50%;
 }
@@ -691,6 +727,10 @@ input {
   justify-content: space-between;
 }
 
+.justify-around{
+  justify-content: space-around;
+}
+
 .overflow-auto{
   overflow: auto;
 }
@@ -719,6 +759,10 @@ input {
   border-bottom-width: 2px;
 }
 
+.border-r-2{
+  border-right-width: 2px;
+}
+
 .border-red-400{
   --tw-border-opacity: 1;
   border-color: rgb(248 113 113 / var(--tw-border-opacity));
@@ -727,6 +771,16 @@ input {
 .border-gray-500{
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
+}
+
+.border-red-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(254 202 202 / var(--tw-border-opacity));
+}
+
+.border-red-600{
+  --tw-border-opacity: 1;
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
 .bg-red-900{
@@ -772,6 +826,21 @@ input {
 .bg-secondary-100{
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.bg-pink-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 231 243 / var(--tw-bg-opacity));
+}
+
+.bg-red-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
+}
+
+.bg-red-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b{
@@ -864,8 +933,16 @@ input {
   padding-left: 0.75rem;
 }
 
+.pr-5{
+  padding-right: 1.25rem;
+}
+
 .text-center{
   text-align: center;
+}
+
+.text-right{
+  text-align: right;
 }
 
 .text-2xl{
@@ -878,14 +955,14 @@ input {
   line-height: 2.25rem;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold{
@@ -956,6 +1033,10 @@ input {
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.outline-red-500{
+  outline-color: #ef4444;
 }
 
 .transition{
@@ -1291,6 +1372,19 @@ input {
 }
 
 @media (min-width: 768px){
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:ml-auto{
+    margin-left: auto;
+  }
+
+  .md\:mb-12{
+    margin-bottom: 3rem;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -1307,8 +1401,32 @@ input {
     width: 66.666667%;
   }
 
+  .md\:w-4\/5{
+    width: 80%;
+  }
+
+  .md\:w-1\/5{
+    width: 20%;
+  }
+
+  .md\:w-80{
+    width: 20rem;
+  }
+
   .md\:basis-1\/2{
     flex-basis: 50%;
+  }
+
+  .md\:basis-2\/5{
+    flex-basis: 40%;
+  }
+
+  .md\:basis-3\/5{
+    flex-basis: 60%;
+  }
+
+  .md\:basis-4\/5{
+    flex-basis: 80%;
   }
 
   .md\:flex-row{
@@ -1331,14 +1449,33 @@ input {
     justify-content: center;
   }
 
-  .md\:bg-red-100{
+  .md\:bg-gray-100{
     --tw-bg-opacity: 1;
-    background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   }
 
   .md\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .md\:px-10{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:pr-5{
+    padding-right: 1.25rem;
   }
 
   .md\:text-left{
@@ -1367,6 +1504,18 @@ input {
 
   .lg\:mb-20{
     margin-bottom: 5rem;
+  }
+
+  .lg\:ml-10{
+    margin-left: 2.5rem;
+  }
+
+  .lg\:ml-0{
+    margin-left: 0px;
+  }
+
+  .lg\:ml-12{
+    margin-left: 3rem;
   }
 
   .lg\:inline-flex{
@@ -1405,6 +1554,16 @@ input {
     background-color: inherit;
   }
 
+  .lg\:bg-pink-200{
+    --tw-bg-opacity: 1;
+    background-color: rgb(251 207 232 / var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-pink-400{
+    --tw-bg-opacity: 1;
+    background-color: rgb(244 114 182 / var(--tw-bg-opacity));
+  }
+
   .lg\:py-12{
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -1417,6 +1576,10 @@ input {
 
   .lg\:pr-5{
     padding-right: 1.25rem;
+  }
+
+  .lg\:pl-10{
+    padding-left: 2.5rem;
   }
 
   .lg\:text-5xl{
