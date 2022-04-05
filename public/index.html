@@ -69,11 +69,15 @@
             class="absolute lg:static top-16 left-full text-white w-full lg:inline-flex lg:justify-end lg:flex-grow lg:flex-row lg:w-auto lg:pr-5 flex flex-col top-navbar bg-gray-800 lg:bg-inherit lg:h-auto rounded-b-lg close"
           >
             <li>
-              <a href="./index.html" class="nav-links">Home</a>
+              <a href="" class="nav-links" data-id="home">Home</a>
             </li>
-            <li><a href="#" class="nav-links">Products</a></li>
-            <li><a href="#" class="nav-links">Contact Us</a></li>
-            <li><a href="#" class="nav-links">FAQ</a></li>
+            <li>
+              <a href="" class="nav-links" data-id="products">Products</a>
+            </li>
+            <li>
+              <a href="#" class="nav-links" data-id="contact">Contact Us</a>
+            </li>
+            <li><a href="#" class="nav-links" data-id="faq">FAQ</a></li>
           </ul>
         </nav>
         <div
@@ -115,47 +119,58 @@
       />
     </header>
 
-    <h2
-      class="text-center text-secondary-100 font-bold capitalize text-3xl mt-8"
-    >
-      top sales
-    </h2>
+    <!-- top sales -->
+    <section id="top-sales">
+      <h2
+        class="text-center text-secondary-100 font-bold capitalize text-3xl mt-8"
+      >
+        top sales
+      </h2>
 
-    <!-- Slider section -->
+      <!-- Slider section -->
 
-    <div class="swiper h-80 my-5 md:w-3/4 overflow-hidden">
-      <div class="swiper-wrapper items-center">
-        <!-- Slides -->
+      <div class="swiper h-80 my-5 md:w-3/4 overflow-hidden">
+        <div class="swiper-wrapper items-center">
+          <!-- Slides -->
 
-        <div class="swiper-slide swiper-slide-2">
-          <img src="./images/boot-250012_640.jpg" alt="" class="slider-img" />
+          <div class="swiper-slide swiper-slide-2">
+            <img src="./images/boot-250012_640.jpg" alt="" class="slider-img" />
+          </div>
+          <div class="swiper-slide swiper-slide-2">
+            <img
+              src="./images/boots-181744_640.jpg"
+              alt=""
+              class="slider-img"
+            />
+          </div>
+          <div class="swiper-slide swiper-slide-2">
+            <img
+              src="./images/dumbbells-2465478_640.jpg"
+              alt=""
+              class="slider-img"
+            />
+          </div>
+          <div class="swiper-slide swiper-slide-2">
+            <img src="./images/boot-250012_640.jpg" alt="" class="slider-img" />
+          </div>
+          <div class="swiper-slide swiper-slide-2">
+            <img
+              src="./images/boots-181744_640.jpg"
+              alt=""
+              class="slider-img"
+            />
+          </div>
+          <div class="swiper-slide swiper-slide-2">
+            <img
+              src="./images/dumbbells-2465478_640.jpg"
+              alt=""
+              class="slider-img"
+            />
+          </div>
         </div>
-        <div class="swiper-slide swiper-slide-2">
-          <img src="./images/boots-181744_640.jpg" alt="" class="slider-img" />
-        </div>
-        <div class="swiper-slide swiper-slide-2">
-          <img
-            src="./images/dumbbells-2465478_640.jpg"
-            alt=""
-            class="slider-img"
-          />
-        </div>
-        <div class="swiper-slide swiper-slide-2">
-          <img src="./images/boot-250012_640.jpg" alt="" class="slider-img" />
-        </div>
-        <div class="swiper-slide swiper-slide-2">
-          <img src="./images/boots-181744_640.jpg" alt="" class="slider-img" />
-        </div>
-        <div class="swiper-slide swiper-slide-2">
-          <img
-            src="./images/dumbbells-2465478_640.jpg"
-            alt=""
-            class="slider-img"
-          />
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
+    </section>
 
     <!-- Exclusive offer -->
     <!-- <section
