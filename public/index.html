@@ -341,7 +341,8 @@
         Get in touch
       </h2>
       <div class="md:flex justify-around items-center w-full">
-        <div class="hidden md:flex md:basis-4/5 lg:ml-12">
+        <!-- precaution: set this div below to "md:basis-4/5" -->
+        <div class="hidden md:flex md:w-4/5 lg:ml-12">
           <img
             src="./images/svgs/contact-luxury-feet.svg"
             alt=""
@@ -411,6 +412,22 @@
               placeholder="Type your message here"
               class="input resize-none pl-3"
             ></textarea>
+          </div>
+          <div
+            class="flex items-center w-72 md:w-80 md:mx-auto md:flex-row-reverse"
+          >
+            <button
+              type="submit"
+              class="px-4 py-2 capitalize font-bold bg-secondary-100 text-primary text-sm mr-3 md:m-0 cursor-pointer"
+            >
+              Send
+            </button>
+            <button
+              type="reset"
+              class="px-3 py-2 capitalize font-bold text-gray-400 text-sm rounded cursor-pointer md:mr-4"
+            >
+              Clear
+            </button>
           </div>
         </form>
       </div>
