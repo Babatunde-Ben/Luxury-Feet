@@ -7,6 +7,7 @@ module.exports = {
         secondary: {
           100: "#f87171",
           200: "#424242",
+          300: "#f25555",
         },
         facebook: "#3A5795",
         instagram: "#E84832",
@@ -17,8 +18,8 @@ module.exports = {
         Poppins: ["Poppins", "sans-serif"],
       },
       animation: {
-        navIn: "navIn 0.3s ease-out",
-        navOut: "navOut 0.3s linear",
+        navIn: "navIn 0.4s ease-out",
+        navOut: "navOut 0.4s linear",
       },
       keyframes: {
         navIn: {
@@ -29,7 +30,7 @@ module.exports = {
             left: "0",
           },
           "90%": {
-            left: "10px",
+            left: "20px",
           },
           "100%": {
             left: "0",

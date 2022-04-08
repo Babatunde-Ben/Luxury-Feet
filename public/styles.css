@@ -688,8 +688,8 @@ input {
 }
 
 .animate-navOut{
-  -webkit-animation: navOut 0.3s linear;
-          animation: navOut 0.3s linear;
+  -webkit-animation: navOut 0.4s linear;
+          animation: navOut 0.4s linear;
 }
 
 @-webkit-keyframes navIn{
@@ -702,7 +702,7 @@ input {
   }
 
   90%{
-    left: 10px;
+    left: 20px;
   }
 
   100%{
@@ -720,7 +720,7 @@ input {
   }
 
   90%{
-    left: 10px;
+    left: 20px;
   }
 
   100%{
@@ -729,8 +729,8 @@ input {
 }
 
 .animate-navIn{
-  -webkit-animation: navIn 0.3s ease-out;
-          animation: navIn 0.3s ease-out;
+  -webkit-animation: navIn 0.4s ease-out;
+          animation: navIn 0.4s ease-out;
 }
 
 .cursor-pointer{
@@ -839,6 +839,16 @@ input {
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
+.bg-gray-700{
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-gray-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -867,6 +877,10 @@ input {
 
 .p-3{
   padding: 0.75rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .py-3{
@@ -1287,6 +1301,11 @@ input {
 .hover\:bg-secondary-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-secondary-300:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 85 85 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary:hover{

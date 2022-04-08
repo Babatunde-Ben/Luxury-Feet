@@ -37,7 +37,6 @@ navLinks.forEach((link) => {
       toggleNavBar();
     } else {
       const element = document.getElementById(id);
-      // console.log(element.getBoundingClientRect());
 
       window.scrollTo({
         top: element.offsetTop - 20,
