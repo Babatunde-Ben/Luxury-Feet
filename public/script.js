@@ -46,3 +46,17 @@ navLinks.forEach((link) => {
     }
   });
 });
+
+// toggle newsletter
+const termInput = document.getElementById("terms-input");
+const termText = document.querySelector(".terms-text");
+const termBox = document.querySelector(".terms-box");
+function toggleNewsletter() {
+  if (termBox.checked === "true") {
+    console.log(`box is checked`);
+  } else {
+    console.log(`everywhere red`);
+  }
+}
+termText.addEventListener("click", toggleNewsletter);
+// toggleNewsletter();

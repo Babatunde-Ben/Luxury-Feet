@@ -462,18 +462,31 @@
           Subscribe to our newsletter
         </h2>
         <form class="flex flex-col sm:flex-row sm:h-10">
-          <input
-            type="email"
-            placeholder="Enter your email address"
-            class="border-2 border-gray-500 outline-none w-full bg-none tracking-wide text-sm px-3 py-2 mb-6 sm:h-full sm:border-r-1 sm:rounded-bl-sm sm:rounded-tl-sm"
-          />
+          <label class="w-full">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              class="border-2 border-gray-500 outline-none w-full bg-none tracking-wide text-sm px-3 py-2 mb-6 sm:h-full sm:border-r-1 sm:rounded-bl-sm sm:rounded-tl-sm"
+            />
+          </label>
           <button
             type="submit"
-            class="px-3 py-2 w-full rounded-full bg-secondary-100 text-primary uppercase font-bold sm:rounded-none sm:inline-block basis-1/3 text-sm sm:rounded-tr-sm sm:rounded-br-sm hover:bg-secondary-300"
+            class="px-3 py-2 w-full bg-secondary-100 text-primary uppercase font-bold sm:rounded-none sm:inline-block basis-1/3 text-sm sm:rounded-tr-sm sm:rounded-br-sm hover:bg-secondary-300"
           >
             Subscribe
           </button>
         </form>
+        <div class="terms mt-2">
+          <input type="checkbox" name="" id="terms-input" checked class="" />
+          <label for="terms-box" class="flex items-center terms-text">
+            <span
+              class="w-4 h-4 border border-secondary-100 inline-block mr-2 terms-box"
+            ></span>
+            <p class="inline-block text-xs cursor-pointer text-secondary-200">
+              By subscribing, I consent to receiving emails
+            </p>
+          </label>
+        </div>
       </div>
     </section>
 
