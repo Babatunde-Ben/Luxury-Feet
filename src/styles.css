@@ -84,3 +84,9 @@
 .form-label {
   @apply block w-auto font-bold text-secondary-200 capitalize mb-1 text-gray-300;
 }
+.checked {
+  @apply bg-secondary-100 sm:bg-gray-500;
+}
+.error {
+  @apply text-xs text-red-400 my-1;
+}

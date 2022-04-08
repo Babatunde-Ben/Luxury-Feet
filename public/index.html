@@ -461,32 +461,36 @@
         <h2 class="text-xl font-bold text-gray-700 capitalize text-center mb-8">
           Subscribe to our newsletter
         </h2>
-        <form class="flex flex-col sm:flex-row sm:h-10">
-          <label class="w-full">
-            <input
-              type="email"
-              placeholder="Enter your email address"
-              class="border-2 border-gray-500 outline-none w-full bg-none tracking-wide text-sm px-3 py-2 mb-6 sm:h-full sm:border-r-1 sm:rounded-bl-sm sm:rounded-tl-sm"
-            />
-          </label>
-          <button
-            type="submit"
-            class="px-3 py-2 w-full bg-secondary-100 text-primary uppercase font-bold sm:rounded-none sm:inline-block basis-1/3 text-sm sm:rounded-tr-sm sm:rounded-br-sm hover:bg-secondary-300"
-          >
-            Subscribe
-          </button>
+        <form class="subscribe-form">
+          <div class="flex flex-col sm:flex-row sm:h-10">
+            <label class="w-full">
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                class="border-2 border-gray-500 outline-none w-full bg-none tracking-wide text-sm px-3 py-2 mb-4 sm:h-full sm:border-r-1 sm:rounded-bl-sm sm:rounded-tl-sm"
+                maxlength="50"
+              />
+            </label>
+            <button
+              type="submit"
+              class="px-3 py-2 w-full bg-secondary-100 text-primary uppercase font-bold sm:rounded-none sm:inline-block basis-1/3 text-sm sm:rounded-tr-sm sm:rounded-br-sm hover:bg-secondary-300"
+            >
+              Subscribe
+            </button>
+          </div>
+          <div class="terms mt-2 ml-2 sm:mt-3">
+            <input type="checkbox" name="" id="terms-input" class="hidden" />
+            <label for="terms-input" class="flex items-center terms-text">
+              <div
+                class="w-2 h-2 outline outline-2 outline-offset-1 outline-secondary-100 sm:outline-gray-500 inline-block mr-2 terms-box"
+              ></div>
+              <p class="inline-block text-xs cursor-pointer text-secondary-200">
+                By subscribing, I consent to receiving emails
+              </p>
+            </label>
+          </div>
+          <p class="error"></p>
         </form>
-        <div class="terms mt-2">
-          <input type="checkbox" name="" id="terms-input" checked class="" />
-          <label for="terms-box" class="flex items-center terms-text">
-            <span
-              class="w-4 h-4 border border-secondary-100 inline-block mr-2 terms-box"
-            ></span>
-            <p class="inline-block text-xs cursor-pointer text-secondary-200">
-              By subscribing, I consent to receiving emails
-            </p>
-          </label>
-        </div>
       </div>
     </section>
 

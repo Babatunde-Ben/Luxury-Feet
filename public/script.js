@@ -51,12 +51,12 @@ navLinks.forEach((link) => {
 const termInput = document.getElementById("terms-input");
 const termText = document.querySelector(".terms-text");
 const termBox = document.querySelector(".terms-box");
+
 function toggleNewsletter() {
-  if (termBox.checked === "true") {
-    console.log(`box is checked`);
+  if (!termInput.checked == true) {
+    termBox.classList.add("checked");
   } else {
-    console.log(`everywhere red`);
+    termBox.classList.remove("checked");
   }
 }
 termText.addEventListener("click", toggleNewsletter);
-// toggleNewsletter();
