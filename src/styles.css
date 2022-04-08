@@ -90,3 +90,15 @@
 .error {
   @apply text-xs text-red-400 my-1;
 }
+footer div {
+  @apply w-full;
+}
+.footer-subtitle {
+  @apply font-bold text-xl text-primary capitalize mb-2;
+}
+.footer-nav-links {
+  @apply text-gray-300 capitalize mb-1 inline-block hover:text-primary;
+}
+.footer-social-media-links {
+  @apply bg-gray-600 text-white w-10 h-10 leading-10  rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:scale-110  hover:text-gray-600 transform transition;
+}
