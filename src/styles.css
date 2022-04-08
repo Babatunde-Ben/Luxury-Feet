@@ -67,7 +67,7 @@
   @apply px-4 py-6 border-2 border-gray-100 bg-white rounded-xl basis-full md:basis-80  md:mr-7 mb-7 hover:shadow-xl hover:-translate-y-1 transition border-none outline-none;
 }
 .testimonial-text {
-  @apply md:text-sm text-center text-base text-secondary-200 leading-7 md:leading-6;
+  @apply md:text-sm text-center text-base text-secondary-200 leading-7 md:leading-6 h-24;
 }
 .testimonial-names {
   @apply font-bold text-center text-lg md:text-base mt-3 text-secondary-100;
