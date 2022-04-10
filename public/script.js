@@ -61,30 +61,76 @@ function toggleNewsletter() {
 }
 termText.addEventListener("click", toggleNewsletter);
 
-// newsletter form validation
 // regular expressions for form validation
-let passwordRegex = /^(?=.*[0-9])(?=.*[a-z]).{8,20}$/;
 let emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
 
+// get-in-touch form
+const contactForm = document.querySelector(".contact-form");
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const firstName = contactForm["first-name"].value;
+  const lastName = contactForm["last-name"].value;
+  const email = contactForm["email"].value;
+  const tel = contactForm["tel"].value;
+  const message = contactForm["message"].value;
+  const errorMessage = contactForm.querySelector(".contact-error");
+
+  if (firstName.length == 0 || /[0-9]/.test(firstName)) {
+    console.log("enter a valid first name");
+
+    errorMessage.classList.remove("hidden");
+    errorMessage.textContent = "Enter a valid first name";
+  } else if (lastName.length == 0 || /[0-9]/.test(lastName)) {
+    console.log("enter a valid last name");
+
+    errorMessage.classList.remove("hidden");
+    errorMessage.textContent = "Enter a valid last name";
+  } else if (!emailRegex.test(email)) {
+    console.log(`enter a valid email address`);
+
+    errorMessage.classList.remove("hidden");
+    errorMessage.textContent = "Enter a valid email address";
+  } else if (tel.length <= 7 || /[a-zA-Z]/.test(tel)) {
+    console.log(`enter a valid phone number`);
+
+    errorMessage.classList.remove("hidden");
+    errorMessage.textContent = "Enter a valid phone number";
+  } else if (message.length <= 3) {
+    console.log(`Enter a valid message`);
+
+    errorMessage.classList.remove("hidden");
+    errorMessage.textContent = "Enter a valid message";
+  } else {
+    console.log(`form is validated `);
+
+    errorMessage.classList.add("hidden");
+    errorMessage.textContent = "";
+    contactForm.reset();
+
+    alert("message sent");
+  }
+});
+
+// newsletter form validation
 const newsletterForm = document.querySelector(".newsletter-form");
 const subscribeBtn = document.querySelector(".subscribe-btn");
 
 newsletterForm.addEventListener("submit", (e) => {
   e.preventDefault();
+
   const subscribeEmail = newsletterForm["email"].value;
-  const errorMessage = newsletterForm.querySelector(".error");
+  const errorMessage = newsletterForm.querySelector(".subscribe-error");
 
   if (!emailRegex.test(subscribeEmail)) {
     errorMessage.classList.remove("hidden");
     errorMessage.textContent = "Enter a valid email address";
-    // console.log("enter a valid email");
   } else if (termInput.checked != true) {
     errorMessage.classList.add("hidden");
-    // console.log(`click the check box`);
   } else {
     errorMessage.textContent = "";
-    newsletterForm.reset();
     termBox.classList.remove("checked");
+    newsletterForm.reset();
 
     alert("Subscribed");
   }
