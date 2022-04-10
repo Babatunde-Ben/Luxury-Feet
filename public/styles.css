@@ -656,6 +656,10 @@ input {
   height: 2.5rem;
 }
 
+.h-24{
+  height: 6rem;
+}
+
 .h-20{
   height: 5rem;
 }
@@ -766,8 +770,8 @@ input {
 }
 
 .animate-navIn{
-  -webkit-animation: navIn 0.4s ease-out;
-          animation: navIn 0.4s ease-out;
+  -webkit-animation: navIn 0.6s ease-out;
+          animation: navIn 0.6s ease-out;
 }
 
 .cursor-pointer{
@@ -887,6 +891,11 @@ input {
 .bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-red-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b{
@@ -1281,10 +1290,9 @@ input {
 }
 
 .testimonial-text{
-  height: 6rem;
   text-align: center;
   font-size: 1rem;
-  line-height: 1.75rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(66 66 66 / var(--tw-text-opacity));
 }

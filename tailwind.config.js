@@ -18,7 +18,7 @@ module.exports = {
         Poppins: ["Poppins", "sans-serif"],
       },
       animation: {
-        navIn: "navIn 0.4s ease-out",
+        navIn: "navIn 0.6s ease-out",
         navOut: "navOut 0.4s linear",
       },
       keyframes: {
