@@ -22,11 +22,21 @@
   .input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #374151 inset !important;
   }
+
+  .newsletter-input:-webkit-autofill,
+  .newsletter-input:-webkit-autofill:hover,
+  .newsletter-input:-webkit-autofill:focus,
+  .newsletter-input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+  }
   .input:-webkit-autofill {
     -webkit-text-fill-color: #ffffff !important;
   }
+  .newsletter-input:-webkit-autofill {
+    -webkit-text-fill-color: #374151 !important;
+  }
   .lf-shadow {
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 8px rgba(255, 255, 255, 0.1);
   }
 }
 
