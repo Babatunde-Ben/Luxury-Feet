@@ -462,7 +462,7 @@ input {
 }
 
 .lf-shadow {
-  box-shadow: 0 5px 8px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
 }
 
 *, ::before, ::after{
@@ -898,11 +898,6 @@ input {
 .bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
-.bg-red-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b{
