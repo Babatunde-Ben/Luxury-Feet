@@ -441,11 +441,19 @@
               id="meassage"
               cols="30"
               rows="10"
+              maxlength="350"
               placeholder="Type your message here"
-              class="input resize-none pl-3"
+              class="input message-area resize-none pl-3"
             ></textarea>
           </div>
-          <p class="contact-error w-72 hidden"></p>
+          <p
+            class="text-right w-72 md:w-80 md:mx-auto text-gray-400 text-xs transform -translate-y-4"
+          >
+            <span class="word-count">0</span>/350
+          </p>
+          <p
+            class="contact-error w-72 md:w-80 md:mx-auto hidden transition duration-1000"
+          ></p>
 
           <div
             class="flex items-center w-72 md:w-80 md:mx-auto md:flex-row-reverse mb-5"
@@ -458,7 +466,7 @@
             </button>
             <button
               type="reset"
-              class="px-3 py-2 capitalize font-bold text-gray-400 text-sm rounded cursor-pointer md:mr-4 outline-none border-none"
+              class="clear-contact-form px-3 py-2 capitalize font-bold text-gray-400 text-sm rounded cursor-pointer md:mr-4 outline-none border-none"
             >
               Clear
             </button>

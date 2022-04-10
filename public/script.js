@@ -61,6 +61,14 @@ function toggleNewsletter() {
 }
 termText.addEventListener("click", toggleNewsletter);
 
+// word count for message box
+const messageArea = document.querySelector(".message-area");
+const wordCount = document.querySelector(".word-count");
+
+messageArea.addEventListener("keyup", () => {
+  wordCount.textContent = messageArea.value.length;
+});
+
 // regular expressions for form validation
 let emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
 
@@ -110,6 +118,12 @@ contactForm.addEventListener("submit", (e) => {
 
     alert("message sent");
   }
+});
+// clear contact form
+const clearFormBtn = document.querySelector(".clear-contact-form");
+clearFormBtn.addEventListener("click", () => {
+  contactForm.reset();
+  wordCount.textContent = "0";
 });
 
 // newsletter form validation
