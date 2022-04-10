@@ -100,11 +100,12 @@
 .error {
   @apply text-xs text-red-500 bg-red-100 my-1 text-center py-1 px-2;
 }
+
 footer div {
   @apply w-full;
 }
 .footer-subtitle {
-  @apply font-bold text-xl text-primary capitalize mb-2;
+  @apply font-extrabold text-xl text-primary capitalize mb-2;
 }
 .footer-nav-links {
   @apply text-gray-300 capitalize mb-1 inline-block hover:text-primary;

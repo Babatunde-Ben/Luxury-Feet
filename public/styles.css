@@ -895,6 +895,11 @@ input {
   background-color: rgb(248 113 113 / var(--tw-bg-opacity));
 }
 
+.bg-secondary-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 85 85 / var(--tw-bg-opacity));
+}
+
 .bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -1079,6 +1084,10 @@ input {
 
 .opacity-50{
   opacity: 0.5;
+}
+
+.opacity-60{
+  opacity: 0.6;
 }
 
 .outline-none{
@@ -1412,7 +1421,7 @@ footer div{
   margin-bottom: 0.5rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
-  font-weight: 700;
+  font-weight: 800;
   text-transform: capitalize;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1606,6 +1615,11 @@ footer div{
     justify-content: center;
   }
 
+  .md\:bg-secondary-100{
+    --tw-bg-opacity: 1;
+    background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+  }
+
   .md\:py-10{
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -1636,6 +1650,11 @@ footer div{
 
   .md\:leading-loose{
     line-height: 2;
+  }
+
+  .md\:hover\:bg-secondary-300:hover{
+    --tw-bg-opacity: 1;
+    background-color: rgb(242 85 85 / var(--tw-bg-opacity));
   }
 }
 

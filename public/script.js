@@ -67,16 +67,25 @@ let passwordRegex = /^(?=.*[0-9])(?=.*[a-z]).{8,20}$/;
 let emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
 
 const newsletterForm = document.querySelector(".newsletter-form");
+const subscribeBtn = document.querySelector(".subscribe-btn");
+
 newsletterForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  const email = newsletterForm["email"].value;
+  const subscribeEmail = newsletterForm["email"].value;
   const errorMessage = newsletterForm.querySelector(".error");
 
-  if (emailRegex.test(email)) {
-    errorMessage.textContent = "";
-    errorMessage.classList.add("hidden");
-  } else {
+  if (!emailRegex.test(subscribeEmail)) {
     errorMessage.classList.remove("hidden");
     errorMessage.textContent = "Enter a valid email address";
+    // console.log("enter a valid email");
+  } else if (termInput.checked != true) {
+    errorMessage.classList.add("hidden");
+    // console.log(`click the check box`);
+  } else {
+    errorMessage.textContent = "";
+    newsletterForm.reset();
+    termBox.classList.remove("checked");
+
+    alert("Subscribed");
   }
 });
