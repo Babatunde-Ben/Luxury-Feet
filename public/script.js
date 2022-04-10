@@ -60,3 +60,23 @@ function toggleNewsletter() {
   }
 }
 termText.addEventListener("click", toggleNewsletter);
+
+// newsletter form validation
+// regular expressions for form validation
+let passwordRegex = /^(?=.*[0-9])(?=.*[a-z]).{8,20}$/;
+let emailRegex = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+
+const newsletterForm = document.querySelector(".newsletter-form");
+newsletterForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const email = newsletterForm["email"].value;
+  const errorMessage = newsletterForm.querySelector(".error");
+
+  if (emailRegex.test(email)) {
+    errorMessage.textContent = "";
+    errorMessage.classList.add("hidden");
+  } else {
+    errorMessage.classList.remove("hidden");
+    errorMessage.textContent = "Enter a valid email address";
+  }
+});

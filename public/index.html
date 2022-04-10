@@ -461,11 +461,12 @@
         <h2 class="text-xl font-bold text-gray-700 capitalize text-center mb-8">
           Subscribe to our newsletter
         </h2>
-        <form class="subscribe-form">
+        <form class="newsletter-form">
           <div class="flex flex-col sm:flex-row sm:h-10">
             <label class="w-full">
               <input
                 type="email"
+                name="email"
                 placeholder="Enter your email address"
                 class="border-2 border-gray-500 outline-none w-full bg-none tracking-wide text-sm px-3 py-2 mb-4 sm:h-full sm:border-r-1 sm:rounded-bl-sm sm:rounded-tl-sm"
                 maxlength="50"
@@ -489,7 +490,7 @@
               </p>
             </label>
           </div>
-          <p class="error"></p>
+          <p class="error hidden"></p>
         </form>
       </div>
     </section>
