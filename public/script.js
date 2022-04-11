@@ -82,7 +82,7 @@ contactForm.addEventListener("submit", (e) => {
   const email = contactForm["email"].value;
   const tel = contactForm["tel"].value;
   const message = contactForm["message"].value;
-  const errorMessage = contactForm.querySelector(".contact-error");
+  let errorMessage = contactForm.querySelector(".contact-error");
 
   if (firstName.length == 0 || /[0-9]/.test(firstName)) {
     console.log("enter a valid first name");
@@ -119,11 +119,17 @@ contactForm.addEventListener("submit", (e) => {
     alert("message sent");
   }
 });
+
 // clear contact form
 const clearFormBtn = document.querySelector(".clear-contact-form");
+let contactError = contactForm.querySelector(".contact-error");
+
 clearFormBtn.addEventListener("click", () => {
   contactForm.reset();
   wordCount.textContent = "0";
+
+  contactError.classList.add("hidden");
+  contactError.textContent = "";
 });
 
 // newsletter form validation
