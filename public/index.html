@@ -20,7 +20,7 @@
   </head>
   <body class="h-screen">
     <!-- Beginning of header -->
-    <header class="relative h-96 lg:h-3/4 bg-red-900">
+    <header class="relative h-96 lg:h-3/4 bg-red-900" id="home">
       <div
         class="w-full h-full bg-gradient-to-b from-black to-black absolute opacity-50"
       ></div>
@@ -69,16 +69,16 @@
             class="absolute lg:static top-16 left-full text-white w-full lg:inline-flex lg:justify-end lg:flex-grow lg:flex-row lg:w-auto lg:pr-5 flex flex-col top-navbar bg-gray-800 lg:bg-inherit lg:h-auto rounded-b-lg close"
           >
             <li>
-              <a href="" class="nav-links" data-id="home">Home</a>
+              <a href="#" class="nav-links" data-id="home">Home</a>
             </li>
             <li>
-              <a href="" class="nav-links" data-id="top-sales">Products</a>
+              <a href="#" class="nav-links" data-id="top-sales">Products</a>
             </li>
             <li>
-              <a href="" class="nav-links" data-id="about">about us</a>
+              <a href="#" class="nav-links" data-id="about">about us</a>
             </li>
             <li>
-              <a href="#" class="nav-links" data-id="testimonials"
+              <a href="#" class="nav-links" data-id="fashion-quotes"
                 >fashion quotes</a
               >
             </li>
@@ -105,14 +105,15 @@
 
           <div class="contacts flex justify-center items-center text-center">
             <a href="#" class="social-media-links">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-media-links">
               <i class="fab fa-facebook-f"></i>
             </a>
             <a href="#" class="social-media-links">
-              <i class="fab fa-twitter"></i>
+              <i class="fa-regular fa-envelope"></i>
             </a>
-            <a href="#" class="social-media-links">
-              <i class="fab fa-instagram"></i>
-            </a>
+
             <a href="#" class="social-media-links">
               <i class="fab fa-whatsapp"></i>
             </a>
@@ -242,15 +243,16 @@
           amet consectetur adipisicing elit. Ut, vero.
         </p>
         <div class="w-full flex justify-center md:justify-start items-center">
-          <a href="#" class="about-links bg-facebook"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-          <a href="#" class="about-links bg-twitter"
-            ><i class="fab fa-twitter"></i
-          ></a>
           <a href="#" class="about-links bg-instagram"
             ><i class="fab fa-instagram"></i
           ></a>
+          <a href="#" class="about-links bg-facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="#" class="about-links bg-gmail"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+
           <a href="#" class="about-links bg-whatsapp"
             ><i class="fab fa-whatsapp"></i
           ></a>
@@ -261,7 +263,7 @@
     <!-- testimonials -->
     <h2
       class="text-center text-secondary-100 font-bold capitalize text-3xl m-5 mt-12"
-      id="testimonials"
+      id="fashion-quotes"
     >
       Fashion Quotes
     </h2>
@@ -518,26 +520,60 @@
 
     <!-- footer -->
     <footer
-      class="bg-gray-900 px-8 py-10 flex flex-wrap items-start justify-evenly"
+      class="bg-gray-900 px-8 py-10 flex flex-wrap items-start justify-evenly gap-y-5"
     >
-      <div class="mb-6 w-full flex justify-center">
+      <!-- logo container -->
+      <div class="w-full flex justify-center">
         <img src="./images/default-logo.png" alt="" class="w-24" />
       </div>
-      <div class="mb-6 w-full">
-        <p class="footer-subtitle text-center">Useful links</p>
+
+      <!-- purpose container -->
+      <div class="w-full">
+        <p class="text-center text-gray-400 mb-1">
+          Purpose is to sustainably make Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Voluptas reprehenderit doloribus placeat est
+          tenetur, deserunt ducimus quis labore saepe tempora?
+        </p>
+      </div>
+
+      <!-- services container -->
+      <div class="w-full">
+        <p class="footer-subtitle text-center">services</p>
+        <ul>
+          <li class="text-center text-gray-400 mb-1 capitalize">
+            online shoe shopping
+          </li>
+
+          <li class="text-center text-gray-400 mb-1 capitalize">
+            shoe size satisfaction
+          </li>
+          <li class="text-center text-gray-400 mb-1 capitalize">
+            Affordable prices
+          </li>
+          <li class="text-center text-gray-400 mb-1 capitalize">
+            door-step delivery
+          </li>
+        </ul>
+      </div>
+
+      <!-- links container -->
+      <div class="w-full">
+        <p class="footer-subtitle text-center">quick links</p>
         <ul>
           <li class="text-center">
-            <a href="" class="footer-nav-links" data-id="home">Home</a>
+            <a href="#" class="footer-nav-links" data-id="home">Home</a>
           </li>
           <li class="text-center">
-            <a href="" class="footer-nav-links" data-id="top-sales">Products</a>
+            <a href="#" class="footer-nav-links" data-id="top-sales"
+              >Products</a
+            >
           </li>
           <li class="text-center">
-            <a href="" class="footer-nav-links" data-id="about">about us</a>
+            <a href="#" class="footer-nav-links" data-id="about">about us</a>
           </li>
           <li class="text-center">
-            <a href="#" class="footer-nav-links" data-id="testimonials"
-              >testimonials</a
+            <a href="#" class="footer-nav-links" data-id="fashion-quotes"
+              >fashion quotes</a
             >
           </li>
           <li class="text-center">
@@ -547,18 +583,21 @@
           </li>
         </ul>
       </div>
+
+      <!-- contacts container  -->
       <div class="mb-6 w-full">
-        <p class="footer-subtitle text-center">contacts</p>
+        <p class="footer-subtitle text-center">stay connected</p>
         <div class="flex justify-center my-3 mx-auto">
+          <a href="#" class="footer-social-media-links">
+            <i class="fab fa-instagram"></i>
+          </a>
           <a href="#" class="footer-social-media-links">
             <i class="fab fa-facebook-f"></i>
           </a>
           <a href="#" class="footer-social-media-links">
-            <i class="fab fa-twitter"></i>
+            <i class="fa-regular fa-envelope"></i>
           </a>
-          <a href="#" class="footer-social-media-links">
-            <i class="fab fa-instagram"></i>
-          </a>
+
           <a href="#" class="footer-social-media-links">
             <i class="fab fa-whatsapp"></i>
           </a>

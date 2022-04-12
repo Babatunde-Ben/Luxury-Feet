@@ -510,6 +510,40 @@ input {
   --tw-backdrop-sepia:  ;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
 .absolute{
   position: absolute;
 }
@@ -609,6 +643,10 @@ input {
 
 .mr-2{
   margin-right: 0.5rem;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
 }
 
 .mb-6{
@@ -826,6 +864,10 @@ input {
   justify-content: space-evenly;
 }
 
+.gap-y-5{
+  row-gap: 1.25rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -879,19 +921,19 @@ input {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-instagram{
+  --tw-bg-opacity: 1;
+  background-color: rgb(232 72 50 / var(--tw-bg-opacity));
+}
+
 .bg-facebook{
   --tw-bg-opacity: 1;
   background-color: rgb(58 87 149 / var(--tw-bg-opacity));
 }
 
-.bg-twitter{
+.bg-gmail{
   --tw-bg-opacity: 1;
-  background-color: rgb(50 156 234 / var(--tw-bg-opacity));
-}
-
-.bg-instagram{
-  --tw-bg-opacity: 1;
-  background-color: rgb(232 72 50 / var(--tw-bg-opacity));
+  background-color: rgb(209 25 52 / var(--tw-bg-opacity));
 }
 
 .bg-whatsapp{
@@ -907,21 +949,6 @@ input {
 .bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
-.bg-red-800{
-  --tw-bg-opacity: 1;
-  background-color: rgb(153 27 27 / var(--tw-bg-opacity));
-}
-
-.bg-green-200{
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
-}
-
-.bg-green-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b{
@@ -1212,7 +1239,7 @@ input {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 500ms;
 }
 
 .social-media-links:hover{
@@ -1461,17 +1488,17 @@ input {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 800;
-  text-transform: capitalize;
+  text-transform: uppercase;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .footer-nav-links{
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   display: inline-block;
   text-transform: capitalize;
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .footer-nav-links:hover{
@@ -1480,7 +1507,8 @@ input {
 }
 
 .footer-social-media-links{
-  margin-right: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   height: 2.5rem;
   width: 2.5rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1496,7 +1524,7 @@ input {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 500ms;
 }
 
 .footer-social-media-links:hover{
@@ -1562,6 +1590,11 @@ input {
 
   .sm\:rounded-br-sm{
     border-bottom-right-radius: 0.125rem;
+  }
+
+  .sm\:bg-red-200{
+    --tw-bg-opacity: 1;
+    background-color: rgb(254 202 202 / var(--tw-bg-opacity));
   }
 
   .sm\:py-8{

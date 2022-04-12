@@ -11,7 +11,7 @@ module.exports = {
         },
         facebook: "#3A5795",
         instagram: "#E84832",
-        twitter: "#329CEA",
+        gmail: "#d11934",
         whatsapp: "#43BF53",
       },
       fontFamily: {

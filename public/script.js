@@ -24,26 +24,41 @@ function toggleNavBar() {
 }
 menuIconBtn.addEventListener("click", toggleNavBar);
 
-// scroll to sections
+// scroll to sections for nav-links
 const navLinks = document.querySelectorAll(".nav-links");
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
-    // prevent page from loading
+    // prevent page from refreshing
     e.preventDefault();
 
     const id = e.target.dataset.id;
-    if (id == "home") {
-      window.location.href = "./index.html";
-      toggleNavBar();
-    } else {
-      const element = document.getElementById(id);
 
-      window.scrollTo({
-        top: element.offsetTop - 20,
-        left: 0,
-      });
-      toggleNavBar();
-    }
+    const element = document.getElementById(id);
+
+    window.scrollTo({
+      top: element.offsetTop - 20,
+      left: 0,
+    });
+    toggleNavBar();
+  });
+});
+
+// scroll to sections for footer nav-links
+const footerNavLinks = document.querySelectorAll(".footer-nav-links");
+footerNavLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    // prevent page from refreshing
+    e.preventDefault();
+
+    const id = e.target.dataset.id;
+
+    const element = document.getElementById(id);
+
+    window.scrollTo({
+      top: element.offsetTop - 20,
+      left: 0,
+    });
+    toggleNavBar();
   });
 });
 

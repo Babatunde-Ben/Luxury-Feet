@@ -50,7 +50,7 @@
   @apply lg:inline-flex lg:mr-5 hover:bg-gray-700 lg:hover:bg-transparent;
 }
 .social-media-links {
-  @apply bg-red-400 text-white w-10 h-10 leading-10  rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:scale-110  hover:text-red-400 transform transition;
+  @apply bg-red-400 text-white w-10 h-10 leading-10  rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:scale-110  hover:text-red-400 transform transition duration-500;
 }
 .swiper-slide-active {
   @apply transform scale-110 transition duration-300;
@@ -109,11 +109,11 @@
 } */
 
 .footer-subtitle {
-  @apply font-extrabold text-xl text-primary capitalize mb-2;
+  @apply font-extrabold text-xl text-primary uppercase mb-2;
 }
 .footer-nav-links {
-  @apply text-gray-300 capitalize mb-2 inline-block hover:text-primary;
+  @apply text-gray-400 capitalize mb-1 inline-block hover:text-primary;
 }
 .footer-social-media-links {
-  @apply bg-gray-600 text-white w-10 h-10 leading-10 rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:scale-110  hover:text-gray-600 transform transition;
+  @apply bg-gray-600 text-white w-10 h-10 leading-10 rounded-full cursor-pointer mx-2 text-center hover:bg-white hover:scale-110  hover:text-gray-600 transform transition duration-500;
 }
