@@ -109,7 +109,7 @@
 } */
 
 .footer-subtitle {
-  @apply font-extrabold text-xl text-primary uppercase mb-2;
+  @apply font-extrabold text-lg text-primary uppercase mb-2;
 }
 .footer-nav-links {
   @apply text-gray-400 capitalize mb-1 inline-block hover:text-primary;
