@@ -38,6 +38,9 @@
   .lf-shadow {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
   }
+  .grid-custom {
+    grid-template-columns: repeat(3, minmax(0, max-content));
+  }
 }
 
 .nav-bar-scroll {
@@ -116,4 +119,12 @@
 }
 .footer-social-media-links {
   @apply bg-gray-600 text-white w-10 h-10 leading-10 rounded-full cursor-pointer mx-2 text-center hover:bg-white hover:scale-110  hover:text-gray-600 transform transition duration-500;
+}
+
+
+.gallery div {
+  @apply border border-2 border-red-200;
+}
+.grid-images {
+  @apply w-full h-full object-cover;
 }
