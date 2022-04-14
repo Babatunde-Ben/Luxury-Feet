@@ -59,7 +59,7 @@
   @apply capitalize text-xl text-secondary-100 font-bold my-1 text-center;
 }
 .service-text {
-  @apply text-center leading-5 text-secondary-200;
+  @apply text-center leading-5 text-primary;
 }
 .swiper-slide-active {
   @apply transform scale-110 transition duration-300;
