@@ -55,6 +55,12 @@
 .social-media-links {
   @apply bg-red-400 text-white w-10 h-10 leading-10  rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:scale-110  hover:text-red-400 transform transition duration-500;
 }
+.service-subtitle {
+  @apply capitalize text-xl text-secondary-100 font-bold my-1 text-center;
+}
+.service-text {
+  @apply text-center leading-5 text-secondary-200;
+}
 .swiper-slide-active {
   @apply transform scale-110 transition duration-300;
 }
@@ -120,7 +126,6 @@
 .footer-social-media-links {
   @apply bg-gray-600 text-white w-10 h-10 leading-10 rounded-full cursor-pointer mx-2 text-center hover:bg-white hover:scale-110  hover:text-gray-600 transform transition duration-500;
 }
-
 
 .gallery div {
   @apply border border-2 border-red-200;

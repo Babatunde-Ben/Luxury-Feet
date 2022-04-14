@@ -738,6 +738,14 @@ input {
   width: 1.25rem;
 }
 
+.w-72{
+  width: 18rem;
+}
+
+.w-24{
+  width: 6rem;
+}
+
 .w-10{
   width: 2.5rem;
 }
@@ -746,20 +754,12 @@ input {
   width: 5rem;
 }
 
-.w-72{
-  width: 18rem;
-}
-
 .w-4\/5{
   width: 80%;
 }
 
 .w-2{
   width: 0.5rem;
-}
-
-.w-24{
-  width: 6rem;
 }
 
 .basis-1\/3{
@@ -849,8 +849,8 @@ input {
   resize: none;
 }
 
-.grid-flow-row-dense{
-  grid-auto-flow: row dense;
+.grid-flow-row{
+  grid-auto-flow: row;
 }
 
 .grid-cols-3{
@@ -899,6 +899,10 @@ input {
 
 .gap-y-5{
   row-gap: 1.25rem;
+}
+
+.gap-y-4{
+  row-gap: 1rem;
 }
 
 .overflow-hidden{
@@ -1014,6 +1018,10 @@ input {
   padding: 0.75rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1022,6 +1030,11 @@ input {
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .py-7{
@@ -1283,6 +1296,25 @@ input {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+.service-subtitle{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
+.service-text{
+  text-align: center;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(66 66 66 / var(--tw-text-opacity));
 }
 
 .swiper-slide-active{
