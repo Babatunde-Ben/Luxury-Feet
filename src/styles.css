@@ -56,10 +56,10 @@
   @apply bg-red-400 text-white w-10 h-10 leading-10  rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:scale-110  hover:text-red-400 transform transition duration-500;
 }
 .service-subtitle {
-  @apply capitalize text-xl text-secondary-100 font-bold my-1 text-center;
+  @apply capitalize text-xl text-gray-800 font-bold my-1 text-center;
 }
 .service-text {
-  @apply text-center leading-5 text-primary;
+  @apply text-center leading-5 text-gray-800;
 }
 .swiper-slide-active {
   @apply transform scale-110 transition duration-300;
