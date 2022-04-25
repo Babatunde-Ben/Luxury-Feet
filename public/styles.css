@@ -1299,6 +1299,9 @@ input {
   width: 18rem;
   flex-direction: column;
   align-items: center;
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity));
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 2rem;
@@ -1338,12 +1341,13 @@ input {
 .slider-img{
   height: 100%;
   width: 15rem;
-  border-radius: 0.5rem;
+  border-radius: 0.125rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .swiper-slide-2{
+  position: relative;
   height: 16rem;
   width: 15rem;
   -webkit-user-select: none;
@@ -1351,6 +1355,42 @@ input {
       -ms-user-select: none;
           user-select: none;
   border-radius: 0.5rem;
+}
+
+.slide-details{
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  --tw-gradient-from: #424242;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(66 66 66 / 0));
+  --tw-gradient-stops: var(--tw-gradient-from), #424242, var(--tw-gradient-to, rgb(66 66 66 / 0));
+  --tw-gradient-to: transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+
+.slide-details p{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.slide-details span{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .swiper-pagination{
