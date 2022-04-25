@@ -462,7 +462,7 @@ input {
 }
 
 .lf-shadow {
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.09);
 }
 
 *, ::before, ::after{
@@ -1293,15 +1293,16 @@ input {
   color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
-.service-container{
+.service-container {
+  box-shadow: inset 0px 0px 10px -6px rgba(0, 0, 0, 0.5);
   display: flex;
   width: 18rem;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  --tw-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .service-subtitle{
