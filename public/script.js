@@ -167,6 +167,10 @@ newsletterForm.addEventListener("submit", (e) => {
     termBox.classList.remove("checked");
     newsletterForm.reset();
 
-    alert("Subscribed");
+    swal({
+      title: "Thanks for subscribing",
+      text: "We'll keep you posted",
+      icon: "success",
+    });
   }
 });
