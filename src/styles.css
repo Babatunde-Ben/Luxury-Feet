@@ -105,7 +105,7 @@
   @apply px-4 py-6 border-2 border-gray-100 bg-white rounded-xl basis-full md:basis-80  md:mr-7 mb-7 hover:shadow-xl hover:-translate-y-1 transition border-none outline-none;
 }
 .testimonial-text {
-  @apply md:text-sm text-center text-base text-secondary-200 leading-5 md:leading-6;
+  @apply md:text-sm text-center text-base text-secondary-200 leading-5 md:leading-6 font-light;
 }
 .testimonial-names {
   @apply font-bold text-center text-lg md:text-base mt-3 text-secondary-100;
@@ -131,10 +131,6 @@
 .subscribe-error {
   @apply text-xs text-red-500 bg-red-100 my-1 text-center py-1 px-2;
 }
-
-/* footer div {
-  @apply ;
-} */
 
 .footer-subtitle {
   @apply font-extrabold text-lg text-primary uppercase mb-2;
