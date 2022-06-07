@@ -66,7 +66,10 @@
   @apply capitalize text-xl text-gray-800 font-bold my-1 text-center;
 }
 .service-text {
-  @apply text-center leading-5 text-gray-800;
+  @apply text-center leading-6 font-light text-gray-800;
+}
+.title-text {
+  @apply text-center text-secondary-100 font-bold capitalize text-3xl mt-9;
 }
 .swiper-slide-active {
   @apply transform scale-110 transition duration-300;
