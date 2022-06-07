@@ -131,7 +131,11 @@ contactForm.addEventListener("submit", (e) => {
     errorMessage.textContent = "";
     contactForm.reset();
 
-    alert("message sent");
+    swal({
+      title: "Message sent",
+      text: "We'll attend to your message shortly",
+      icon: "success",
+    });
   }
 });
 
