@@ -179,3 +179,8 @@ newsletterForm.addEventListener("submit", (e) => {
     });
   }
 });
+//  update copyright
+
+const footerYear = document.querySelector(".footer-year");
+footerYear.textContent = new Date().getFullYear();
+// console.log(footerYear);
