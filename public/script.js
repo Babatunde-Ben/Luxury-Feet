@@ -168,6 +168,7 @@ newsletterForm.addEventListener("submit", (e) => {
     errorMessage.classList.add("hidden");
   } else {
     errorMessage.textContent = "";
+    errorMessage.classList.add("hidden");
     termBox.classList.remove("checked");
     newsletterForm.reset();
 

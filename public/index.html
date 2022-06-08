@@ -21,7 +21,7 @@
   </head>
   <body class="h-screen">
     <!-- Beginning of header -->
-    <header class="relative h-3/5 lg:h-5/6 bg-red-900" id="home">
+    <header class="relative h-4/6 lg:h-5/6 bg-red-900" id="home">
       <div
         class="w-full h-full bg-gradient-to-b from-black to-black absolute opacity-50"
       ></div>
@@ -93,7 +93,7 @@
           class="w-full h-3/4 text-center flex justify-center items-center flex-col"
         >
           <h1
-            class="text-2xl md:text-3xl lg:text-5xl lg:leading-tight mb-5 text-primary shadow-lg font-bold capitalize tracking-wide font-Poppins"
+            class="text-3xl leading-normal md:text-3xl lg:text-5xl lg:leading-tight mb-5 text-primary shadow-lg font-bold capitalize tracking-wide font-Poppins"
           >
             Luxury feet for <br />
             a token
@@ -600,7 +600,7 @@
         <h2 class="text-xl font-bold text-gray-700 capitalize text-center mb-8">
           Subscribe to our newsletter
         </h2>
-        <form class="newsletter-form">
+        <form class="newsletter-form" novalidate>
           <div class="flex flex-col sm:flex-row sm:h-10">
             <label class="w-full">
               <input
@@ -729,6 +729,8 @@
         loop: true,
         autoplay: {
           delay: 5000,
+          disableOnInteraction: false,
+          waitForTransition: true,
         },
 
         pagination: {

@@ -44,6 +44,15 @@
   .custom-inner-shadow {
     box-shadow: inset 0px 0px 10px -6px rgba(0, 0, 0, 0.5);
   }
+  .custom-scale {
+    height: 500px;
+
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: transform 500ms;
+    -webkit-transition: -webkit-transform 500ms;
+    transition: all 500ms;
+  }
 }
 
 .nav-bar-scroll {
@@ -56,7 +65,7 @@
   @apply lg:inline-flex lg:mr-5 hover:bg-gray-700 lg:hover:bg-transparent;
 }
 .social-media-links {
-  @apply bg-red-400 text-white w-10 h-10 leading-10  rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:scale-110  hover:text-red-400 transform transition duration-200;
+  @apply bg-red-400 text-white w-10 h-10 leading-10 rounded-full cursor-pointer mr-4 text-center hover:bg-white hover:scale-110  hover:text-red-400 transform transition duration-200;
 }
 .service-container {
   @apply w-72 px-4 py-8 flex flex-col items-center  custom-inner-shadow;
@@ -72,7 +81,7 @@
   @apply text-center text-secondary-100 font-bold capitalize text-3xl mt-9;
 }
 .swiper-slide-active {
-  @apply transform scale-110 transition duration-300 lf-shadow;
+  @apply custom-scale  lf-shadow;
 }
 
 .slider-img {
