@@ -102,7 +102,7 @@
 }
 
 .testimonials {
-  @apply px-4 py-6 border-2 border-gray-100 bg-white rounded-xl basis-full md:basis-80  md:mr-7 mb-7 hover:shadow-xl hover:-translate-y-1 transition border-none outline-none;
+  @apply px-4 py-6 border-2 border-gray-100  rounded-xl basis-full md:basis-80  md:mr-7 mb-7 hover:shadow-xl hover:-translate-y-1 transition  outline-none;
 }
 .testimonial-text {
   @apply md:text-sm text-center text-base text-secondary-200 leading-5 md:leading-6 font-light;
@@ -133,7 +133,7 @@
 }
 
 .footer-subtitle {
-  @apply font-extrabold text-lg text-primary uppercase mb-2;
+  @apply font-extrabold text-lg text-gray-200 uppercase mb-2;
 }
 .footer-nav-links {
   @apply text-gray-400 capitalize mb-1 inline-block hover:text-primary;
