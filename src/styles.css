@@ -72,7 +72,7 @@
   @apply text-center text-secondary-100 font-bold capitalize text-3xl mt-9;
 }
 .swiper-slide-active {
-  @apply transform scale-110 transition duration-300;
+  @apply transform scale-110 transition duration-300 lf-shadow;
 }
 
 .slider-img {
