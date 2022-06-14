@@ -628,8 +628,8 @@ input {
   margin-right: 0.75rem;
 }
 
-.mt-2{
-  margin-top: 0.5rem;
+.mt-4{
+  margin-top: 1rem;
 }
 
 .ml-2{
@@ -646,18 +646,6 @@ input {
 
 .mb-6{
   margin-bottom: 1.5rem;
-}
-
-.mt-3{
-  margin-top: 0.75rem;
-}
-
-.mt-6{
-  margin-top: 1.5rem;
-}
-
-.mt-4{
-  margin-top: 1rem;
 }
 
 .inline-block{
@@ -971,11 +959,6 @@ input {
 .bg-gray-900{
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
-.bg-red-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b{
@@ -1595,6 +1578,11 @@ input {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.invalid{
+  --tw-border-opacity: 1;
+  border-color: rgb(252 165 165 / var(--tw-border-opacity));
+}
+
 .subscribe-error{
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
@@ -1681,14 +1669,6 @@ input {
 @media (min-width: 640px){
   .sm\:mt-3{
     margin-top: 0.75rem;
-  }
-
-  .sm\:mt-8{
-    margin-top: 2rem;
-  }
-
-  .sm\:mt-4{
-    margin-top: 1rem;
   }
 
   .sm\:inline-block{
@@ -1854,14 +1834,6 @@ input {
 
   .md\:flex-wrap{
     flex-wrap: wrap;
-  }
-
-  .md\:items-start{
-    align-items: flex-start;
-  }
-
-  .md\:items-end{
-    align-items: flex-end;
   }
 
   .md\:items-center{

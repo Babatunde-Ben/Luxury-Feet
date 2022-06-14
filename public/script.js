@@ -164,12 +164,15 @@ newsletterForm.addEventListener("submit", (e) => {
   if (!emailRegex.test(subscribeEmail)) {
     errorMessage.classList.remove("hidden");
     errorMessage.textContent = "Enter a valid email address";
+    newsletterForm["email"].classList.add("invalid");
   } else if (termInput.checked != true) {
     errorMessage.classList.add("hidden");
+    newsletterForm["email"].classList.remove("invalid");
   } else {
     errorMessage.textContent = "";
     errorMessage.classList.add("hidden");
     termBox.classList.remove("checked");
+    newsletterForm["email"].classList.remove("invalid");
     newsletterForm.reset();
 
     swal({
